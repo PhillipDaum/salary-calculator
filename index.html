@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salaray-tax-calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="" id="form">
+        <label for="income">Enter your gross income</label>
+        <input type="number" name="income" id="income">
+        <label for="">Per</label>
+        <select name="per" id="per">
+            <option value="annual">Annual</option>
+            <option value="month">Month</option>
+        </select>
+            <label for="state">Where do you work?</label>
+            <select name="state" id="state">
+                <option value="NC">North Carolina</option>
+                <option value="ID">Idaho</option>
+                <option value="MD">Maryland</option>
+                <option value="NM">New Mexico</option>
+                <option value="AZ">Arizona</option>
+                <option value="GA">Georgia</option>
+            </select>
+            <button type="submit">Calculate</button>
+    </form>
+<div class="response-wrapper">
+    <h3>Summary</h3>
+    <p class="summary" id="summary"></p>
+</div>
+<script src="js/custom.js"></script>
+</body>
+
+</html>
