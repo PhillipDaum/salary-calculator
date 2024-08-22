@@ -1,0 +1,16 @@
+:root {
+    --background-light: #ada4a4;
+    --background-dark: #0A0A0A;
+
+    --piechart-01: #f06;
+    --piechart-02: yellowgreen;
+}
+
+/* Pie chart */
+.chart {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%
+}
+
+
