@@ -13,13 +13,18 @@
         <h1>Income tax calculator USA</h1>
         <h2>Find out how much your salary is after tax</h2>
         <form action="" id="form">
-            <label for="income">Enter your gross income</label>
-            <input type="number" name="income" id="income">
-            <label for="">Per</label>
-            <select name="per" id="per">
-                <option value="annual">Annual</option>
-                <option value="month">Month</option>
-            </select>
+            <div class="input-group">
+                <label for="income">Enter your gross income</label>
+                <input type="number" name="income" id="income" max="9999999">
+            </div>
+            <div class="input-group">
+                <label for="">Per</label>
+                <select name="per" id="per">
+                    <option value="annual">Annual</option>
+                    <option value="month">Month</option>
+                </select>
+            </div>
+            <div class="input-group">
                 <label for="state">Where do you work?</label>
                 <select name="state" id="state">
                     <option value="NC">North Carolina</option>
@@ -29,19 +34,26 @@
                     <option value="AZ">Arizona</option>
                     <option value="GA">Georgia</option>
                 </select>
-                <button type="submit">Calculate</button>
+            </div>
+            <button type="submit">Calculate</button>
+            <img src="img/logo.png" alt="an abstract wallet">
         </form>
     </div>
 
-<div class="summary-wrapper">
-    <h3>Summary</h3>
-    <p class="summary" id="summary"></p>
-</div>
-<div class="chart-wrapper">
-    <div class="chart" id="chart">
+    <div class="bottom-half hidden" id="bottom-half">
+        <div class="summary-wrapper">
+            <h3>Summary</h3>
+            <p class="summary" id="summary"></p>
+        </div>
+        <div class="chart-wrapper">
+            <div class="chart" id="chart">
+            </div>
+        </div>
     </div>
-</div>
-<script src="js/custom.js"></script>
+    <footer>
+        <p class="footer-text">for entertainment purposes only, all information is false.</p>
+    </footer>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

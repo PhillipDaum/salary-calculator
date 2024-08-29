@@ -10,6 +10,7 @@
 
 body {
     font-family: sans-serif;
+    margin: 0;
 }
 h2 {
     font-weight: 200;
@@ -18,32 +19,71 @@ h2 {
 .form-wrapper {
     margin: 2rem;
 }
-
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: flex-end;
+}
+form img {
+    max-width: 10rem;
+}
 form input {
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background-color: var(--background-light);
-    padding: .5rem;
+    padding: 1rem;
 }
 form select {
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background-color: var(--background-light);
-    padding: .5rem;
+    padding: 1rem;
 }
 form button {
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background-color: var(--button);
-    padding: .5rem;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
 }
 
+.bottom-half {
+    background-color: var(--background-light);
+    padding: 2rem;
+}
+.hidden {
+    display: none;
+}
+.summary-wrapper {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.summary-wrapper h3 {
+    text-align: center;
+}
+.chart-wrapper {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
 /* Pie chart */
 .chart {
     height: 20rem;
     width: 20rem;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
 }
 
-
+footer {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    text-align: center;
+}
