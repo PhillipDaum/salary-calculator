@@ -1,16 +1,49 @@
 :root {
-    --background-light: #ada4a4;
+    --background-light: #e2d7d7;
     --background-dark: #0A0A0A;
 
-    --piechart-01: #f06;
-    --piechart-02: yellowgreen;
+    --button: #D6432A;
+
+    --accent-01: rgb(255, 34, 155);
+    --accent-02: rgb(37, 248, 255);
+}
+
+body {
+    font-family: sans-serif;
+}
+h2 {
+    font-weight: 200;
+}
+
+.form-wrapper {
+    margin: 2rem;
+}
+
+form input {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--background-light);
+    padding: .5rem;
+}
+form select {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--background-light);
+    padding: .5rem;
+}
+form button {
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--button);
+    padding: .5rem;
 }
 
 /* Pie chart */
 .chart {
     height: 20rem;
     width: 20rem;
-    border-radius: 50%
+    border-radius: 50%;
+    
 }
 
 

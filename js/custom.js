@@ -57,5 +57,6 @@ const calculate = (array) => {
 
 const makeChart = (ratio) => {
     console.log(ratio);
-    document.getElementById('chart').style.background = `conic-gradient(var(--piechart-02) ${ratio}%, var(--piechart-01) 0)`;
+    document.getElementById('chart').style.background = `conic-gradient(var(--accent-02) ${ratio}%, var(--accent-01) 0)`;
 }
+
