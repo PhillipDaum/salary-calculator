@@ -29,7 +29,9 @@ const submitForm = (e) => {
 document.querySelector("#form").addEventListener("submit", submitForm);
 
 const calculate = (array) => {
+    console.log(userArray)
     let region = array[0].state;
+    console.log("region", region)
     let annualSalary;
     if (array[0].per === "annual") {
         annualSalary = array[0].income;
@@ -37,7 +39,7 @@ const calculate = (array) => {
         annualSalary = array[0].income * 12;
     }
     // what about this syntax with the brackets? it's weird
-    let theTaxRate = taxRates[region];
+    let theTaxRate = taxRates[region]; // the bracket notation lets me pass through a string for the key
     let annualTaxAmount = annualSalary * theTaxRate;
     let netPay = annualSalary - annualTaxAmount;
     let monthlyNetPay = netPay/12;
@@ -57,5 +59,3 @@ const makeChart = (ratio) => {
     console.log(ratio);
     document.getElementById('chart').style.background = `conic-gradient(var(--piechart-02) ${ratio}%, var(--piechart-01) 0)`;
 }
-
-// 
